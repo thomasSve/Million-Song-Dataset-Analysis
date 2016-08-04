@@ -1,0 +1,15 @@
+# exclude everything except report file
+/*
+!/report
+/report/*
+!/report/song-popularity-prediction.pdf
+
+# include the code
+!/code
+
+/code/*
+!/code/song_popularity_prediction.R
+
+
+# Include gitignore
+!.gitignore
