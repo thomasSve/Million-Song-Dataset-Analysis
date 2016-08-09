@@ -9,7 +9,7 @@
 
 /code/*
 !/code/song_popularity_prediction.R
-
+!/code/song_popularity_dataset.R
 
 # Include gitignore
 !.gitignore
