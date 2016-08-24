@@ -11,5 +11,13 @@
 !/code/song_popularity_prediction.R
 !/code/song_popularity_dataset.R
 
+# include the datasets
+!/datasets
+
+/datasets/*
+!/datasets/msd_genre_dataset.txt
+!/datasets/msd_simple.csv
+!/datasets/README.md
+
 # Include gitignore
 !.gitignore
