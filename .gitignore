@@ -10,6 +10,9 @@
 /code/*
 !/code/song_popularity_prediction.R
 !/code/song_popularity_dataset.R
+!/code/song_prepro_pop.R
+!/code/song_prepro_year.R
+
 
 # include the datasets
 !/datasets

@@ -14,7 +14,7 @@ cls <- new.env()
 #cls$dt <- read.csv("msd_mean_pop.csv")
 
 ## Predict genre
-cls$dt <- read.table(file = "../dataset/msd_genre_dataset.txt", header = TRUE, sep = ",", comment = "#", quote=NULL, fill=TRUE)
+cls$dt <- read.table(file = "../datasets/msd_genre_dataset.txt", header = TRUE, sep = ",", comment = "#", quote=NULL, fill=TRUE)
 
 ## Build the training/validate/test datasets.
 ## Split into 70/15/15 train/test/val
