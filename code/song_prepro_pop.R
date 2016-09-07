@@ -1,6 +1,6 @@
 ## 
 ## Thomas Astad Sve
-## 
+## Script to create a popular column in the msd dataset, and cleans duplicates
 ## 
 
 ## -- Load dataset --

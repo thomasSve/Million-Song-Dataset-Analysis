@@ -29,9 +29,6 @@ cls$sample <- cls$train <- sample(cls$nrow, train*cls$nrow)
 cls$validate <- sample(setdiff(seq_len(cls$nrow), cls$train), val*cls$nrow)
 cls$test <- setdiff(setdiff(seq_len(cls$nrow), cls$train), test*cls$nrow)
 
-##cat(paste("Distribution: ", cls$train ,"/", cls$validate,"/", cls$test, "\n"))
-
-
 ## The following variable selections have been noted.
 
 cls$input <- c("loudness", "tempo", "time_signature", "key", "mode", "duration")
@@ -100,14 +97,12 @@ text(cls$dtfit, use.n=TRUE, all=TRUE, cex=.8)
 dev.off()
 
 ## Plot count of genre distribution
-##distribution <- count(cls$dt, "genre")
-
-##g1<-ggplot(cls$dt, aes(x=factor(1), fill=factor(genre))) + geom_bar(width = 1)
-
-##plot(g1 + coord_polar(theta="y"))
-
-##plot(g1+geom_violin(alpha=0.5, color="gray")+geom_jitter(alpha=0.5, aes(color=genre),
-##      position = position_jitter(width = 0.1))+coord_flip())
+print("Creating a year distribution pie")
+jpeg('genre_distribution.jpg')
+g1<-ggplot(cls$dt, aes(x=factor(1), fill=factor(genre))) + geom_bar(width = 1)
+plot(g1 + coord_polar(theta="y"))
+dev.off()
+print("Saved year distribution plot")
 
 
 ## Plot relation between loudness and genre
